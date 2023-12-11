@@ -237,7 +237,8 @@ p {
     width: 90%;
   }
   #arrow{
-    top: 1%;
+    margin-top: 10%;
+    margin-right: 7%;
   }
   h1{
     margin-top: 7%;
