@@ -104,6 +104,7 @@ body{
   padding: 12px 12px;
   margin-top: 5%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .row{
