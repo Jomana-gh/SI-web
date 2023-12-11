@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="time-css.css">
+  <script src="time-java.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap"  rel="stylesheet">
+
+  <title> SI | الزمن </title>
+</head>
+
+<body>  
+  <nav>
+    <a href="index.html">
+      <img src="logo.png" width="70px">
+    </a>
+      
+    <ul id="navList">
+      <li class="pages"><a href="index.html">الرئيسية</a></li>
+      <li class="pages"><a href="about-us-html.html">نبذة عنّا</a></li>
+      <li class="pages"><a href="SI-html.html">النظام الدولي للوحدات</a></li>
+      <li class="pages"><a href="covert-html.html">التحويلات</a></li>
+      <li class="pages"><a href="calc.html">الحاسبة</a></li>
+    </ul>
+      
+    <div class="menu-icon">
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
+    </div>
+  </nav>  
+  <section class="container">
+    <a id="arrow" href="covert-html.html">رجوع ></a>
+    <div class="content">
+      <h1 >تحويل الزمن </h1> 
+      <p id="about">
+        وحدة قياس الزمن أو الوقت هي الثانية ، وهي الوحدة الأساسية لقياس الزمن في النظام الدولي للوحدات وتستخدم لقياس الوقت. قديمًا كانت تستخدم حركة الشمس والأرض أساسًا لتعريف الزمن ولكنها لم تعد كذلك في العصر الحديث. ومع ظهور الساعات الذريّة أصبح من الممكن تعريف الثانية على أساس الخصائص الأساسية للذرة. لمعرفة المزيد يمكن الاطلاع على أداة التحويل بين وحدات قياس الزمن ادناه :              
+      </p>
+      
+      <input type="number" id="inputValue" placeholder="ادخل القيمة هنا" oninput="convert()"> 
+
+      <section class="lists">
+        <select id="fromUnit" onchange="convert()"> 
+          <option value="s">الثانية (s)</option> 
+          <option value="m">الدقيقة (m)</option> 
+          <option value="h">الساعة (h)</option> 
+          <option value="d">اليوم (d)</option>  
+      </select> 
+
+      <select id="toUnit" onchange="convert()"> 
+        <option value="s">الثانية (s)</option> 
+        <option value="m">الدقيقة (m)</option> 
+        <option value="h">الساعة (h)</option> 
+        <option value="d">اليوم (d)</option> 
+      </select>
+    </section>
+    <p id="result">0.000000</p> 
+  </div>
+  <script src="nav.js"></script>  
+
+</body>
+</html>

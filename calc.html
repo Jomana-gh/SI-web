@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS sheet -->
+  <link rel="stylesheet" href="calc.css">
+  <!-- font sheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+
+  <!-- js page -->
+  <script src="calc-java.js"></script>
+
+  <title> SI | الحاسبة </title>
+ 
+</head>
+
+<body>  
+  <nav>
+    <a href="index.html">
+      <img src="logo.png" width="70px">
+    </a>
+      
+    <ul id="navList">
+      <li class="pages"><a href="index.html">الرئيسية</a></li>
+      <li class="pages"><a href="about-us-html.html">نبذة عنّا</a></li>
+      <li class="pages"><a href="SI-html.html">النظام الدولي للوحدات</a></li>
+      <li class="pages"><a href="covert-html.html">التحويلات</a></li>
+      <li class="pages"><a href="calc.html">الحاسبة</a></li>
+    </ul>
+  
+    <div class="menu-icon">
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
+    </div>
+  </nav>
+
+  <div class="bg"></div>
+
+  <!-- calculator elements -->
+  <div class="container">
+    <div class="calculator" >
+      <section class="screen" id="result"></section>
+      <div class="row">
+        <input type="button" value="C" class="buttons longButtons" onclick="clearScreen()" id="btn" /> 
+        <input type="button" value="÷" class="buttons" onclick="display('/')" />
+      </div>
+
+      <div class="row">
+        <input type="button" value="7" class="buttons" onclick="display('7')" />
+        <input type="button" value="8" class="buttons" onclick="display('8')" />
+        <input type="button" value="9" class="buttons" onclick="display('9')" />
+        <input type="button" value="×" class="buttons" onclick="display('*')" />
+      </div>
+
+      <div class="row">
+        <input type="button" value="4" class="buttons" onclick="display('4')" />
+        <input type="button" value="5" class="buttons" onclick="display('5')" />
+        <input type="button" value="6" class="buttons" onclick="display('6')" />
+        <input type="button" value="-" class="buttons" onclick="display('-')" />
+      </div>
+
+      <div class="row">
+        <input type="button" value="1" class="buttons" onclick="display('1')" />
+        <input type="button" value="2" class="buttons" onclick="display('2')" />
+        <input type="button" value="3" class="buttons" onclick="display('3')" />
+        <input type="button" value="+" class="buttons" onclick="display('+')" />
+      </div>
+
+      <div class="row">
+        <input type="button" value="0" class="buttons" onclick="display('0')" />
+        <input type="button" value="." class="buttons" onclick="display('.')" />
+        <input type="button" value="=" id="btn" class="buttons longButtons" onclick="calculate()"/>
+      </div>  
+    </div>       
+  </div>
+  <script src="nav.js"></script>
+  
+</body>
+</html>

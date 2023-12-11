@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="amber-css.css">
+  <script src="amber-java.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap"  rel="stylesheet">
+
+  <title> SI | شدة التيار</title>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+      <img src="logo.png" width="70px">
+    </a>
+      
+    <ul id="navList">
+      <li class="pages"><a href="index.html">الرئيسية</a></li>
+      <li class="pages"><a href="about-us-html.html">نبذة عنّا</a></li>
+      <li class="pages"><a href="SI-html.html">النظام الدولي للوحدات</a></li>
+      <li class="pages"><a href="covert-html.html">التحويلات</a></li>
+      <li class="pages"><a href="calc.html">الحاسبة</a></li>
+    </ul>
+      
+    <div class="menu-icon">
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
+    </div>
+  </nav>  
+  <section class="container">
+    <a id="arrow" href="covert-html.html">رجوع ></a>
+    <div class="content">
+      <h1 >تحويل شدة التيار  </h1> 
+      <p id="about">
+        الأمبير هو وحدة قياس شدة التيار الكهربائي وهو أحد وحدات القياس الأساسية السبعة في النظام الدولي للوحدات. يرمز للأمبير بالعربية بالحرف ( أ ), وقد اختير الاسم تخليدًا لذكرى العالم الفرنسي أندري أمبير الذي درس التيار الكهربائي, والأمبير هو شدة التيار الناتج عن مرور شحنة كهربائية قدرها 1 كولوم في زمن قدره 1 ثانية. لمعرفة المزيد يمكنك الإطلاع على أداة التحويل بين وحدات التيار أدناه :
+      </p>
+
+      <input type="number" id="inputValue" placeholder="ادخل القيمة هنا" oninput="convert()"> 
+      <section class="lists">
+        <select id="fromUnit" onchange="convert()"> 
+          <option value="Ampere">  أمبير (A)</option> 
+          <option value="kiloampere"> كيلوأمبير(kiloampere)</option> 
+          <option value="nanoampere">نانوأمبير(nanoampere)</option> 
+          <option value="milliampere"> ملي أمبير(milliampere)</option>  
+          <option value="gigaampere">جيجاأمبير (gigaampere)</option> 
+          <option value="megaampere">ميجاأمبير (megaampere)</option> 
+        </select>
+        <select id="toUnit" onchange="convert()"> 
+          <option value="Ampere">  أمبير (A)</option> 
+          <option value="kiloampere"> كيلوأمبير(kiloampere)</option> 
+          <option value="nanoampere">نانوأمبير(nanoampere)</option> 
+          <option value="milliampere"> ملي أمبير(milliampere)</option>  
+          <option value="gigaampere">جيجاأمبير (gigaampere)</option> 
+          <option value="megaampere">ميجاأمبير (megaampere)</option>
+        </select>
+      </section> 
+      <p id="result">0.000000</p> 
+  </div>
+  <script src="nav.js"></script>
+</body>
+</html>
