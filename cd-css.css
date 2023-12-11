@@ -85,12 +85,10 @@ direction: rtl;
 }
 
 #arrow{
-  position: absolute;
+  position: relative;
   font-size: 24px;
-  direction: ltr;
-  top: 2%;
-  right: 5%;
-  color: #fafff0;
+  margin-right: 7%;
+  color: #fff3fa;
 }
   
   
